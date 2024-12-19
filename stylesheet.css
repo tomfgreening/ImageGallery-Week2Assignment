@@ -1,0 +1,26 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+body {
+  background-color: slateblue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+/* leaving the body colour here for now, so I can tell if something goes wrong later down the line */
+/* maybe use grid to get the title in the top left. This could show innovation towards a stretch goal mark */
+
+.Thumbnails-Container {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-column-end: span 2;
+  background-color: black;
+  width: 200px;
+  height: 200px;
+}
+
+.Fullsizedimg-Container {
+  grid-row-start: 1;
+  grid-row-end: span 4;
+  grid-column-start: 1;
+  grid-column-end: span 4;
+}
